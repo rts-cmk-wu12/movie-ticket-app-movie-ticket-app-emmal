@@ -7,7 +7,7 @@ const options = {
     }
 }
 
-const BASE_MONGO_URL = 'http://localhost:3000/';
+const BASE_MONGO_URL = import.meta.env.VITE_BASE_MONGO_URL;
 
 // fetch list from api
 async function getData( endpoint, searchParams = {}, baseUrl = BASE_API_URL) {
