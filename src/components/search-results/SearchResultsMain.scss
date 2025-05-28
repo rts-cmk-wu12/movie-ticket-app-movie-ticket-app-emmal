@@ -1,0 +1,13 @@
+.search-results {
+
+    &__heading {
+        padding-inline-end: 2rem;
+    }
+
+    &__list {
+        padding-inline-end: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}

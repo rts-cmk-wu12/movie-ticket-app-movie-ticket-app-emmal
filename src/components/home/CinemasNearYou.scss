@@ -1,0 +1,67 @@
+@use '../../style/variables';
+
+.cinemas {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-inline-end: 2rem;
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+}
+
+.cinema-card {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 1rem;
+    align-items: center;
+    
+    &__image {
+        max-width: 4.75rem;
+        aspect-ratio: 1;
+    }
+
+    &__location {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        font-size: 0.75rem;
+
+        &-icon {
+            color: variables.$color-medium-secondary;
+        }
+
+        &-text {
+            color: variables.$color-accent;
+        }
+    }
+
+    &__heading {
+        font-weight: 500;
+    }
+
+    &__opening-hours {
+        font-size: 0.75rem;
+        color: variables.$color-light-secondary;
+    }
+
+    &__rating {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        font-size: 0.875rem;
+
+        &-icon {
+            color: variables.$color-star;
+        }
+
+        &-text {
+            color: variables.$color-light-secondary;
+        }
+    }
+}

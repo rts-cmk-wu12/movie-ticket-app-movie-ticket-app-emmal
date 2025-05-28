@@ -1,0 +1,38 @@
+@use '../../style/variables';
+
+.top-movies {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    &__inputs {
+        margin-inline-end: 2rem;
+        display: flex;
+        padding: 0.75rem;
+        border-radius: 0.75rem;
+        background-color: variables.$color-dark-transparent;
+    }
+
+    &__label {
+        padding: 0.75rem;
+        width: 50%;
+        text-align: center;
+        border-radius: 0.25rem;
+    }
+
+    &__label:has(input:checked) {
+        background-color: variables.$color-accent;
+        color: variables.$color-light-main;
+    }
+
+    &__input {
+        display: none;
+    }
+
+    &__list {
+        display: flex;
+        gap: 2rem;
+        overflow: scroll;
+        scroll-snap-stop: always;
+    }
+}

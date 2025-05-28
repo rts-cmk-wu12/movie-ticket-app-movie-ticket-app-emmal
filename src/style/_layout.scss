@@ -1,0 +1,55 @@
+@use './variables';
+
+#root {
+
+    font-family: variables.$font-face;
+
+    p {
+        line-height: 1.25lh;
+    }
+
+    display: grid;
+    grid-template-areas: 
+        'header'
+        'main'
+        'footer'
+    ;
+    height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    overflow: hidden;
+
+    header {
+        grid-area: header;
+        background-color: variables.$color-dark-main;
+        color: variables.$color-light-main;
+        padding: 1rem 2rem;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    h1, h2, h3 {
+        font-weight: 500;
+    }
+
+    main {
+        grid-area: main;
+        overflow: hidden scroll;
+        padding: 0.5rem 0 0.5rem 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        background-color: variables.$color-dark-main;
+        color: variables.$color-light-main;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+    .line-break {
+        display: block;
+    }
+}

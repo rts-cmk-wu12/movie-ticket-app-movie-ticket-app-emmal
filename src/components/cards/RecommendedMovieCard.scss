@@ -1,0 +1,10 @@
+.recommended-movie-card {
+    &__image {
+        width: 8rem;
+        border-radius: 0.75rem;
+    }
+
+    &__heading {
+        font-size: 0.9rem;
+    }
+}

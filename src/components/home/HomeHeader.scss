@@ -1,0 +1,10 @@
+@use '../../style/variables';
+
+.home-header {
+    
+    &__heading {
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+}

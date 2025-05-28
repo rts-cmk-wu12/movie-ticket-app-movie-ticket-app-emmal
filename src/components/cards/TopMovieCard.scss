@@ -1,0 +1,21 @@
+@use '../../style/variables';
+
+.top-movie-card {
+
+    &__image {
+        width: 12rem;
+        border-radius: 0.75rem;
+    }
+
+    &__rating {
+        display: flex;
+        gap: 0.25rem;
+        align-items: center;
+        color: variables.$color-light-secondary;
+        font-size: 0.75rem;
+    }
+
+    &__star {
+        color: variables.$color-star;
+    }
+}

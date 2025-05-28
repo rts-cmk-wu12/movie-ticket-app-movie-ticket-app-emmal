@@ -1,0 +1,18 @@
+@use '../style/variables';
+
+.button {
+    margin: 0 2rem 1rem 0;
+    background-color: variables.$color-accent;
+    border: none;
+    font-size: 1.125rem;
+    padding: 1rem;
+    border-radius: 0.75rem;
+}
+
+.button-dark {
+    background-color: variables.$color-dark-main;
+    border: none;
+    font-size: 1.125rem;
+    padding: 1rem;
+    border-radius: 0.75rem;
+}
