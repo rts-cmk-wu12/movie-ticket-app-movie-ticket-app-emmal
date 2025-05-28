@@ -1,0 +1,12 @@
+.header {
+    display: grid;
+    grid-template-columns: 1fr 80% 1fr;
+    justify-items: center;
+    align-items: center;
+
+    &__button {
+        background-color: inherit;
+        border: none;
+        font-size: 1.5rem;
+    }
+}

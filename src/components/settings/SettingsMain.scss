@@ -1,0 +1,68 @@
+@use '../../style/variables';
+
+.settings {
+
+    &__flex-container-row-long {
+        margin-inline-end: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-block: 1rem;
+    }
+
+    &__flex-container-row-short {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    &__image {
+        height: 3rem;
+        aspect-ratio: 1;
+    }
+
+    &__flex-container-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__text {
+        font-size: 0.875rem;
+        color: variables.$color-light-secondary;
+    }
+
+    &__arrow-icon {
+        font-size: 1.625rem;
+    }
+
+    &__section {
+        padding-block: 1rem;
+        border-block-start: 1px solid variables.$color-dark-secondary;
+    }
+
+    &__icon-container {
+        padding: .5rem;
+        border-radius: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__icon {
+        color: variables.$color-light-main;
+        font-size: 1.5rem;
+    }
+
+}
+
+.color-blue {
+    background-color: variables.$color-blue;
+}
+
+.color-accent {
+    background-color: variables.$color-accent;
+}
+
+.color-red {
+    background-color: variables.$color-red;
+}

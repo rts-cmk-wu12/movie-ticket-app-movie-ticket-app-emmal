@@ -1,0 +1,24 @@
+@use '../../style/variables';
+
+.search-form {
+
+    color: variables.$color-dark-secondary;
+    display: flex;
+    padding-inline-end: 2rem;
+    
+    &__input {
+        background-color: variables.$color-dark-transparent;
+        border: none;
+        width: 100%;
+        padding: 1rem 5rem 1rem 1rem;
+        border-radius: 0.75rem;
+    }
+
+    &__button {
+        background-color: inherit;
+        font-size: 1.5rem;
+        border: none;
+        margin-inline-start: -2.5rem;
+        margin-block-start: 0.25rem;
+    }
+}

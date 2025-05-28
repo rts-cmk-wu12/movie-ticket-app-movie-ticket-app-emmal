@@ -1,0 +1,14 @@
+@use '../../style/variables';
+
+.recommended-movies {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    &__list {
+        display: flex;
+        gap: 1rem;
+        overflow: scroll;
+        scroll-snap-stop: always;
+    }
+}

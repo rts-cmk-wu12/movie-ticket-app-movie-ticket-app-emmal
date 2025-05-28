@@ -1,0 +1,20 @@
+@use '../../style/variables';
+
+.large-movie-card {
+    
+    padding-inline-end: -2rem;
+
+    &__image {
+        max-width: 20rem;
+        border-radius: 0.75rem;
+    }
+
+    &__heading {
+        font-weight: 500;
+    }
+
+    &__date {
+        font-size: 0.875rem;
+        color: variables.$color-light-secondary;
+    }
+}

@@ -1,0 +1,101 @@
+@use '../../style/variables';
+
+.select-seats {
+
+    &__selects {
+        margin-inline-end: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .wide {
+        grid-column: 1 / 3;
+    }
+
+    &__label {
+        font-size: 0.75rem;
+    }
+
+    &__select {
+        display: block;
+        width: 100%;
+        background-color: inherit;
+        color: variables.$color-light-secondary;
+        border: 1px solid variables.$color-light-secondary;
+        padding: 0.5rem 1rem;
+        border-radius: 0.75rem;
+    }
+
+    &__cinema-layout {
+        margin-inline-end: 2rem;
+    }
+
+    &__seat-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        row-gap: 1rem;
+    }
+/* 
+    &__seat-container:first-child {
+        grid-column: 3 / 4;
+    } */
+
+    &__seat-label {
+        background-color: inherit;
+        border: 1px solid variables.$color-light-secondary;
+        border-radius: 0.5rem;
+        width: 1.875rem;
+        aspect-ratio: 1;
+    }
+
+    &__seat-label:has(input:checked) {
+        background-color: variables.$color-accent;
+        border: none;
+    }
+
+    &__seat-label:has(input:disabled) {
+        background-color: variables.$color-red;
+        border: none;
+    }
+
+    &__seat-input {
+        display: none;
+    }
+    
+    &__color-codes {
+        margin-inline-end: 2rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__color-code {
+        display: flex;
+        gap: 0.25rem;
+        align-items: center;
+    }
+
+    &__color {
+        height: 0.75rem;
+        width: 0.75rem;
+        border: 1px solid variables.$color-light-secondary;
+        border-radius: 10rem;
+    }
+
+    &__color-text {
+        font-size: 0.75rem;
+        color: variables.$color-light-secondary;
+    }
+
+    .selected {
+        background-color: variables.$color-accent;
+        border: none;
+    }
+
+    .reserved {
+        background-color: variables.$color-red;
+        border: none;
+    }
+}

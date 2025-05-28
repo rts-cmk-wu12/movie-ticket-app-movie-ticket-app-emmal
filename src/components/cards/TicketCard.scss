@@ -1,0 +1,34 @@
+@use '../../style/variables';
+
+.ticket {
+    margin-inline-end: 2rem;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 1rem;
+    color: variables.$color-dark-main;
+    background-color: variables.$color-light-main;
+    padding: 2rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+    border-radius: 0.75rem;
+
+    &__heading, &__category {
+        font-size: 1rem;
+    }
+
+    &__category {
+        color: variables.$color-red;
+    }
+
+    &__subheading {
+        color: variables.$color-dark-secondary;
+    }
+
+    &__text {
+        color: variables.$color-dark-main;
+    }
+
+    &__image {
+        grid-column: 1 / 3;
+    }
+}

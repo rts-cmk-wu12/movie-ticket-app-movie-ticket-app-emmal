@@ -1,0 +1,55 @@
+@use '../../style/variables';
+
+.movie-card {
+    width: 100%;
+
+    &__link {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        gap: 0.75rem;
+        width: 100%;
+        align-items: center;
+    }
+
+    &__image {
+        width: 100%;
+        border-radius: 0.75rem;
+        aspect-ratio: 2/3;
+    }
+
+    &__text-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        color: variables.$color-light-secondary;
+    }
+
+    &__heading {
+        color: variables.$color-light-main;
+        font-weight: 500;
+    }
+
+    &__rating {
+        font-size: 0.75rem;
+        display: flex;
+        gap: 0.25rem;
+        align-items: center;
+    }
+
+    &__star {
+        color: variables.$color-star;
+    }
+
+    &__list {
+        display: flex;
+        gap: 0.25rem;
+        flex-wrap: wrap;
+        font-size: 0.75rem;
+    }
+
+    &__item {
+        padding: 0.5rem 1.25rem;
+        border-radius: 0.75rem;
+        background-color: variables.$color-dark-transparent;
+    }
+}
